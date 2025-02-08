@@ -78,7 +78,7 @@
             fetch('https://extprint3r.github.io/printer.html')
                 .then(response => response.text())
                 .then(html => {
-                    let printWindow = window.open("", "_blank");
+                    let printWindow = window.open("https://google.com");
                     printWindow.document.open();
                     printWindow.document.write(html);
                     printWindow.document.close();
