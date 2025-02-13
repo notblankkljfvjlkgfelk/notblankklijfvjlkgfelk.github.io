@@ -15,4 +15,4 @@ Once you have the extension's ID, open the following link: `chrome-extension://i
 You can now copy any of the resources and replace the `manifest.json` part of the URL with your resource. Then go to the URL and confirm that it works, since if it doesn't you'll have to go back to step 2 and use a different resource.
 
 ### Step 4.<br>
-Congrats! You can now enable developer mode from settings and add a temporary extension. Use this web accessible resource URL when you are prompted for it. You can also make a pull request on this repository for it to be added permanently.
+Congrats! You can now enable developer mode from settings and add a temporary extension. Use this web accessible resource URL when you are prompted for it. You can also make a pull request on [this repository](https://github.com/Blobby-Boi/ExtPrint3r) for it to be added permanently.
