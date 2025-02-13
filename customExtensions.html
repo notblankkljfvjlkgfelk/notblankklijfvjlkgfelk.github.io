@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Custom Extensions to ExtPrint3r</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .warning {
+            background-color: #ffcccc;
+            padding: 10px;
+            border-left: 5px solid red;
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Add Custom Extensions to ExtPrint3r</h1>
+    <div class="warning">
+        <strong>WARNING:</strong> If this guide fails for you, do not go bother Blobby Boi or 3kh0 about it. This is only for advanced users.
+    </div>
+
+    <h2>Step 1.</h2>
+    <p>First, you must find the extension's ID. To do this, go to <code>chrome://extensions</code> and click on the extension of choice. Then look for the ID and copy it.</p>
+    <img src="https://github.com/user-attachments/assets/2846982e-d22b-4b38-acad-45d465e7c24f" alt="Extension ID Screenshot">
+    <p>If the ID doesn't show up like in the image above, you can also find it in the URL.</p>
+
+    <h2>Step 2.</h2>
+    <p>Once you have the extension's ID, open the following link: <code>chrome-extension://id-here/manifest.json</code> (replace "id-here" with the ID you got earlier).</p>
+    <p>Once you are on the page, you need to find a web-accessible resource with an explicit file name. These are typically near the bottom of the page. Look for something like this:</p>
+    <img src="https://github.com/user-attachments/assets/de656ecf-ea46-4b5a-a7b5-c0a00c749126" alt="Manifest JSON Screenshot">
+
+    <h2>Step 3.</h2>
+    <p>You can now copy any of the resources and replace the <code>manifest.json</code> part of the URL with your resource. Then go to the URL and confirm that it works. If it doesn’t, you’ll have to go back to step 2 and use a different resource.</p>
+
+    <h2>Step 4.</h2>
+    <p>Congrats! You can now enable developer mode from settings and add a temporary extension. Use this web-accessible resource URL when prompted.</p>
+    <p>You can also make a pull request on <a href="https://github.com/Blobby-Boi/ExtPrint3r">this repository</a> for it to be added permanently.</p>
+</body>
+</html>
